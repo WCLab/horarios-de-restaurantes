@@ -3,8 +3,8 @@
 class BaseController extends Controller {
 
 	public function __construct(){
-		Blade::setContentTags('<%', '%>');
-    	Blade::setEscapedContentTags('<%%', '%%>');
+		Blade::setContentTags('#{', '}');
+    	Blade::setEscapedContentTags('#{{', '}}');
 	}
 
 	protected function setupLayout(){
