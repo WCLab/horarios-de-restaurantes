@@ -2,9 +2,8 @@
 
 class HomeController extends BaseController {
 
-	public function showWelcome()
-	{
-		return View::make('hello');
+	public function index(){
+		return View::make('layout')->with('nombre',"Fer");
 	}
 
 	public function test(){
