@@ -12,16 +12,16 @@
 					</div>
 					<div ng-show="dia.checked">
 						<div id="horarios_{{dia.id}}">
-							<div>
+							<div ng-repeat="horario in dia.horarios">
 								<label>Apertura</label>
-								<input type="text" name="" ui-timepicker="timePickerOptions" ng-model="dia.horarios[$index]['apertura']" class="picker">
+								<input type="text" name="" ui-timepicker="timePickerOptions" ng-model="dia.horarios[$index].apertura" class="picker">
 								<label>Cierre</label>
-								<input type="text" name="" ui-timepicker="timePickerOptions" ng-model="dia.horarios[$index]['cierre']" class="picker">
+								<input type="text" name="" ui-timepicker="timePickerOptions" ng-model="dia.horarios[$index].cierre" class="picker">
 							</div>
 						</div>
 						<div>
-							<!-- <button ng-click="add('horarios_' + dia.id)" type="button">Agregar horario</button> -->
-							<button type="button" add-horario dia="{{dia.id}}">Agregar horario</button>
+							<button ng-click="add($index)" type="button">Agregar horario</button>
+							<!-- <button type="button" add-horario dia="{{dia.id}}">Agregar horario</button> -->
 						</div>
 					</div>
 				</li>
