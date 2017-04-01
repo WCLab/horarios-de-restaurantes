@@ -2,7 +2,7 @@
 
 @section('content')
 	<div ng-controller="mainCtrl">
-		<div>{{abierto_txt}}</div>
+		<!-- <div>{{abierto_txt}}</div> -->
 		<form>
 			<ul>
 				<li ng-repeat="dia in dias | orderBy : 'id'">
@@ -14,13 +14,14 @@
 						<div id="horarios_{{dia.id}}">
 							<div>
 								<label>Apertura</label>
-								<input type="text" name="horarios[{{dia.id}}][apertura]" ui-timepicker="timePickerOptions" ng-model="horarios[dia.id]['apertura']" class="picker">
+								<input type="text" name="" ui-timepicker="timePickerOptions" ng-model="dia.horarios[$index]['apertura']" class="picker">
 								<label>Cierre</label>
-								<input type="text" name="horarios[{{dia.id}}][cierre]" ui-timepicker="timePickerOptions" ng-model="horarios[dia.id]['cierre']" class="picker">
+								<input type="text" name="" ui-timepicker="timePickerOptions" ng-model="dia.horarios[$index]['cierre']" class="picker">
 							</div>
 						</div>
 						<div>
-							<button ng-click="addHorarios('horarios_' + dia.id)" type="button">Agregar horario</button>
+							<!-- <button ng-click="add('horarios_' + dia.id)" type="button">Agregar horario</button> -->
+							<button type="button" add-horario dia="{{dia.id}}">Agregar horario</button>
 						</div>
 					</div>
 				</li>
