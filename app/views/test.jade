@@ -1,0 +1,20 @@
+extends layout
+
+block content
+	div(ng-controller="mainCtrl")
+		form
+			ul
+				li(ng-repeat="dia in dias | orderBy: id ")
+					div
+						input(type="checkbox", value="{{$index}}", ng-checked="dia.checked==true", ng-change="diasUpdate()", ng-model="dias[$index]['checked']", id="{{$index+dia.nombre}}")
+						label(for="{{$index+dia.nombre}}") {{dia.nombre}}
+					div(ng-show="dia.checked")
+						div(id="horarios_{{dia.id}}")
+							div(ng-repeat="horario in dia.horarios")
+								label Apertura
+								input.picker(type="text", name="", ui-timepicker="timePickerOptions", ng-model="dia.horarios[$index].apertura")
+								label Cierre
+								input.picker(type="text", name="", ui-timepicker="timePickerOptions", ng-model="dia.horarios[$index].cierre")
+						div
+							button(ng-click="add($index)", type="button") Agregar horario
+				button(type="button", ng-click="save()") Guardar

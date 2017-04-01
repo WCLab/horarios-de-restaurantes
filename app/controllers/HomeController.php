@@ -3,7 +3,9 @@
 class HomeController extends BaseController {
 
 	public function index(){
-		return View::make('layout')->with('nombre',"Fer");
+		return View::make('test')
+			->with('nombre',"Fer")
+		;
 	}
 
 	public function test(){
