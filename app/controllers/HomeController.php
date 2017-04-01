@@ -3,9 +3,8 @@
 class HomeController extends BaseController {
 
 	public function index(){
-		return View::make('test')
-			->with('nombre',"Fer")
-		;
+		$scope["restaurantes"] = Restaurant::all();
+		return View::make('restaurantes')->with('scope',$scope);
 	}
 
 	public function test(){

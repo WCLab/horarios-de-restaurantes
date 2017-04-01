@@ -1,0 +1,1 @@
+var app;app=angular.module("yapp"),app.directive("ngTimepicker",["$scope",function(e){return{restrict:"A",link:function(e,i,p){return $(e).timepicker(p.timePickerOptions)}}}]);

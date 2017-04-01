@@ -1,7 +1,7 @@
 extends layout
 
 block content
-	div(ng-controller="mainCtrl")
+	div(ng-controller="HorariosController")
 		form
 			ul
 				li(ng-repeat="dia in dias | orderBy: id ")
@@ -12,9 +12,9 @@ block content
 						div(id="horarios_{{dia.id}}")
 							div(ng-repeat="horario in dia.horarios")
 								label Apertura
-								input.picker(type="text", name="", ui-timepicker="timePickerOptions", ng-model="dia.horarios[$index].apertura")
+								input.picker(type="text", name="", ng-timepicker, ng-model="dia.horarios[$index].apertura")
 								label Cierre
-								input.picker(type="text", name="", ui-timepicker="timePickerOptions", ng-model="dia.horarios[$index].cierre")
+								input.picker(type="text", name="", ng-timepicker, ng-model="dia.horarios[$index].cierre")
 						div
 							button(ng-click="add($index)", type="button") Agregar horario
 				button(type="button", ng-click="save()") Guardar

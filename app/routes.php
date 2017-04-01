@@ -14,3 +14,7 @@
 Route::get('/','HomeController@index');
 
 Route::get('/test','HomeController@test');
+
+Route::get('/restaurantes','RestaurantesController@index');
+
+Route::get('/restaurantes/delete/{id}','RestaurantesController@delete');
