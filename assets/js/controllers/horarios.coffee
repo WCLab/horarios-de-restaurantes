@@ -1,6 +1,6 @@
 app = angular.module 'yapp'
 
-app.controller "HorariosController", ["$scope","$compile",($scope,$compile) ->
+app.controller "HorarioController", ["$scope",($scope) ->
 	
 	$scope.dias = [
 		{id:1,nombre:"Domingo",checked: false,horarios:[]}

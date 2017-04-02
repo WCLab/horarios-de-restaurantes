@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"restaur",
+				"restaurantes"
+			],
+			[
+				"rest",
+				"restaurantes"
+			],
+			[
+				"res",
+				"restaurant"
+			],
+			[
+				"Rest",
+				"restaurantes"
+			],
+			[
 				"input",
 				"inputCierre"
 			],
@@ -102,10 +118,6 @@
 			[
 				"ip",
 				"ip_address	CI - Get ip address"
-			],
-			[
-				"res",
-				"response"
 			],
 			[
 				"regis",
@@ -502,84 +514,128 @@
 			[
 				"str_re",
 				"str_replace"
-			],
-			[
-				"print",
-				"print_r"
-			],
-			[
-				"is_i",
-				"is_int"
-			],
-			[
-				"produ",
-				"productos"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "/www/yapp/app/controllers/BaseController.php",
+			"file": "app/controllers/BaseController.php",
 			"settings":
 			{
-				"buffer_size": 295,
+				"buffer_size": 316,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/www/yapp/app/controllers/HomeController.php",
+			"file": "app/controllers/HomeController.php",
 			"settings":
 			{
-				"buffer_size": 182,
+				"buffer_size": 249,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/www/yapp/app/views/hello.php",
+			"file": "app/controllers/RestaurantesController.php",
 			"settings":
 			{
-				"buffer_size": 7679,
+				"buffer_size": 627,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/www/yapp/app/views/layout.blade.php",
+			"file": "app/views/restaurantes.jade",
 			"settings":
 			{
-				"buffer_size": 543,
+				"buffer_size": 476,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/media/asus/4C7AAA667AAA4D10/localhost/htdocs/hogare/app/views/layout/Web.blade.php",
+			"file": "app/models/Restaurant.php",
 			"settings":
 			{
-				"buffer_size": 7610,
+				"buffer_size": 86,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/www/yapp/app/routes.php",
+			"file": "app/views/test.jade",
 			"settings":
 			{
-				"buffer_size": 499,
+				"buffer_size": 856,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/www/yapp/app/views/test.blade.php",
+			"file": "assets/js/app.coffee",
 			"settings":
 			{
-				"buffer_size": 1141,
+				"buffer_size": 79,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app.coffee",
+			"file": "assets/js/directives.coffee",
 			"settings":
 			{
-				"buffer_size": 2096,
+				"buffer_size": 192,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/js/controllers/horarios.coffee",
+			"settings":
+			{
+				"buffer_size": 750,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/js/controllers/restaurantes.coffee",
+			"settings":
+			{
+				"buffer_size": 303,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/layout.jade",
+			"settings":
+			{
+				"buffer_size": 498,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/errors/404.jade",
+			"settings":
+			{
+				"buffer_size": 46,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/routes.php",
+			"settings":
+			{
+				"buffer_size": 674,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/config/packages/bkwld/laravel-pug/config.php",
+			"settings":
+			{
+				"buffer_size": 155,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/start/global.php",
+			"settings":
+			{
+				"buffer_size": 2700,
 				"line_ending": "Unix"
 			}
 		}
@@ -590,6 +646,10 @@
 		"height": 398.0,
 		"selected_items":
 		[
+			[
+				"jade",
+				"Set Syntax: Jade"
+			],
 			[
 				"html",
 				"Set Syntax: HTML"
@@ -633,10 +693,6 @@
 			[
 				"lore",
 				"LoremIpsum: (5) a bit"
-			],
-			[
-				"jade",
-				"Set Syntax: Jade"
 			],
 			[
 				"lo",
@@ -711,7 +767,7 @@
 				"Package Control: Disable Package"
 			]
 		],
-		"width": 554.0
+		"width": 527.0
 	},
 	"console":
 	{
@@ -728,6 +784,30 @@
 	},
 	"file_history":
 	[
+		"/www/yapp/app/config/app.php",
+		"/www/yapp/app/storage/views/a9710e7ca2db5e1407522b73e00b8dd8",
+		"/www/yapp/.gitignore",
+		"/www/yapp/app/start/global.php",
+		"/www/yapp/app/views/layout.jade",
+		"/www/yapp/app/controllers/HomeController.php",
+		"/www/yapp/app/views/hello.php",
+		"/www/yapp/app/views/layout.blade.php",
+		"/media/asus/4C7AAA667AAA4D10/localhost/htdocs/hogare/app/views/layout/Web.blade.php",
+		"/www/yapp/app/routes.php",
+		"/www/yapp/app/views/test.blade.php",
+		"/www/yapp/app/views/test.jade",
+		"/www/yapp/assets/templates/horario.html",
+		"/www/yapp/assets/js/app.coffee",
+		"/www/yapp/app/config/database.php",
+		"/www/yapp/app/config/services.php",
+		"/www/yapp/app/config/packages/bkwld/laravel-pug/config.php",
+		"/www/yapp/app/views/layout.pug",
+		"/media/asus/4C7AAA667AAA4D10/localhost/htdocs/jade/vendor/pug-php/pug/tests/templates/auxiliary/layout.populated-blocks.jade",
+		"/www/yapp/assets/js/app.js",
+		"/media/asus/4C7AAA667AAA4D10/localhost/htdocs/jade/vendor/pug-php/pug/tests/templates/auxiliary/layout.jade",
+		"/media/asus/4C7AAA667AAA4D10/localhost/htdocs/jade/vendor/pug-php/pug/tests/templates/auxiliary/layout.include.jade",
+		"/media/asus/4C7AAA667AAA4D10/localhost/htdocs/jade/vendor/pug-php/pug/tests/templates/yield.jade",
+		"/www/yapp/app.coffee",
 		"/www/yapp/assets/js/libs/jquery.timepicker.js",
 		"/www/yapp/assets/app.coffee",
 		"/www/yapp/app/views/test.blade.html",
@@ -831,31 +911,7 @@
 		"/P/consorcio/app/views/contacto.jade",
 		"/C/Users/desarrollo/AppData/Local/Temp/fz3temp-2/database.php",
 		"/P/diplomado_rp/public/css/sinkinsans.css",
-		"/P/diplomado_rp/public/css/template.styl",
-		"/P/diplomado_rp/public/css/custom.styl",
-		"/P/diplomado_rp/public/css/config.styl",
-		"/P/idl/respaldo/v1/static/css/sinkinsans.css",
-		"/P/diplomado_rp/app/core/MY_Controller.php",
-		"/P/diplomado_rp/app/views/site.jade",
-		"/P/diplomado_rp/app/views/index.jade",
-		"/P/diplomado_rp/app/views/yields/footer.jade",
-		"/P/diplomado_rp/public/css/style.css",
-		"/P/diplomado_rp/public/css/style.styl",
-		"/P/diplomado_rp/public/css/snackbar.styl",
-		"/P/diplomado_rp/app/views/empresa.jade",
-		"/P/diplomado_rp/public/css/mods/empresa.styl",
-		"/P/diplomado_rp/app/views/clientes.jade",
-		"/P/diplomado_rp/app/views/servicios.jade",
-		"/P/diplomado_rp/public/css/responsive.styl",
-		"/P/diplomado_rp/public/css/bootstrap.styl",
-		"/P/diplomado_rp/public/css/layers.styl",
-		"/P/diplomado_rp/public/js/mods/contacto.coffee",
-		"/P/diplomado_rp/public/css/mods/contacto.styl",
-		"/P/diplomado_rp/app/views/certificaciones.jade",
-		"/P/diplomado_rp/app/views/mixins/contacto.jade",
-		"/P/diplomado_rp/app/config/routes.php",
-		"/Z/smart/app/config/routes.php",
-		"/P/diplomado_rp/app/controllers/geo.php"
+		"/P/diplomado_rp/public/css/template.styl"
 	],
 	"find":
 	{
@@ -874,134 +930,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"data",
+			"RestaurantesController",
+			"data",
+			"restaurantes",
+			"ajax",
+			"then",
+			"restaurant",
+			"restaurantes",
+			"scope",
+			"var",
+			"baseUrl",
+			"this",
+			"window",
+			"base",
+			"baseUrl",
+			"window",
+			"base",
+			"true",
+			"url",
+			"$data",
+			"link",
+			"index",
+			"get",
+			"RestaurantesController",
+			"remove",
+			"id",
+			"remove",
+			"where",
+			"eliminar",
+			"editar",
+			"test",
+			"HomeController",
+			"test",
+			"missing",
+			"restaurantes",
+			"controllers",
+			"scripts",
+			"data",
+			"scope",
+			"$scope",
+			"scope",
+			"data",
+			"nombre",
+			"ul",
+			"users",
+			"index",
+			"test",
+			"ServiceProvider",
+			"ui-timepicker=\"timePickerOptions",
+			"res",
+			"return",
+			"restr",
+			"{apertura:'',cierre:''}",
+			"'",
+			"timePickerOptions",
+			"='',",
+			"yield",
+			"'",
+			"yield",
+			"block",
+			"content",
+			"yield",
+			"content",
+			"extends",
+			"content",
+			"include",
+			"yield",
+			"content",
+			"include",
+			"yield",
+			"content",
+			"layout",
+			"\"",
+			"'",
+			"stylesheet",
+			"rel",
+			"#",
+			"@",
+			"Fer",
+			"nombre",
+			"#{",
+			"script",
+			"</script>",
+			"<",
+			"whatever",
+			"class",
+			"showWelcome",
+			"forge",
+			"dia",
+			"apertura:[],cierre:[]",
+			"dia.horarios.",
+			"horarios:{",
+			"cierre",
+			"[horarios][$index]",
+			"horarios:{",
+			"apertura",
+			"cierre",
+			"apertura",
 			"horarios",
-			"watch",
-			"attr",
+			"cierre",
+			"']\"",
+			"dia",
+			"[dia.id]",
+			"index",
+			"$index]",
+			"container",
+			"contents",
+			"parent",
+			"this",
 			"container",
 			"wrapper",
-			"createTextNode",
-			"Apertura",
-			"timePickerOptions",
-			"timepicker",
-			"timePickerOptions",
-			"timepicker",
-			"Apertura",
-			"label",
-			"}}][][",
-			"name=\"horario[{{dia.id}}][][apertura]\"",
 			"cierre",
-			"{{dia.nombre}}",
-			"$index",
-			"hora",
-			"appendTo",
-			"timeFormat",
-			"true",
-			"show2400",
-			"timepicker",
-			"min",
-			"{",
-			"@",
-			"%%>",
-			"app",
-			"Apertura",
-			"true",
-			"index",
-			"dia_",
-			"dias_abiertos",
-			"abierto_txt",
-			"dias_abiertos",
-			"abierto",
-			"element",
-			"index",
-			"id:1",
-			"nombre",
-			"abierto_txt",
-			"element",
-			"nombre",
-			"checked",
-			"index",
-			"dia",
-			"index",
-			"nombre",
-			"item",
-			"abiertos",
-			"aplit",
-			"true",
-			"checked",
-			"dia",
-			"dias",
-			"index",
-			"%%",
-			"{{",
-			"dia",
-			"index",
-			"dia",
-			"Domingo",
-			":",
-			"0:",
-			"Lunes",
-			"see",
-			"Route",
-			"javascript",
-			"Sábado",
-			"<inp",
-			"Domingo",
-			"nombre",
-			"mundo",
-			"data",
-			"section",
-			"index2",
-			"ciudades",
-			"estados",
-			"paises",
-			"article",
-			"ModelName",
-			"CI_Model",
-			"num_rows",
-			"users",
-			"result_array",
-			"num_rows",
-			"all",
-			"value",
-			"elegant",
-			"model",
-			"config",
-			"datamapper",
-			"get_by",
-			"match",
-			"break",
-			"return",
-			"value",
-			"subject",
-			"needle",
-			"database",
-			"databases",
-			".gz",
-			"mode",
-			"$databases[0]",
-			"value",
-			"databases",
-			"database_name",
-			"export",
-			"MySQLDump",
-			"print_r",
-			"dump",
-			"MySQLDump",
-			"ameref",
-			"cloud_gastro",
-			"password",
-			"username",
-			"testdb",
-			"localhost",
-			"fechafingarantia",
-			"sqlDate",
-			"garantia",
-			"locked",
-			"ngNumberField",
-			"true",
-			"viewValue",
-			"ngModel",
-			"element"
+			"dia.horarios",
+			"compile",
+			"watch",
+			"apertura",
+			"cierre",
+			"apertura",
+			"horarios",
+			"apertura",
+			"{{dia.id}}",
+			"horario",
+			"id",
+			"append",
+			"+ ",
+			"'",
+			"elem",
+			"cierre"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -1009,6 +1065,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"\")\n",
 			"menuresp",
 			"ED5B27",
 			"#072D6C",
@@ -1063,23 +1120,23 @@
 	"groups":
 	[
 		{
-			"selected": 7,
+			"selected": 9,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/www/yapp/app/controllers/BaseController.php",
+					"file": "app/controllers/BaseController.php",
 					"settings":
 					{
-						"buffer_size": 295,
+						"buffer_size": 316,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								154,
-								154
+								180,
+								180
 							]
 						],
 						"settings":
@@ -1095,24 +1152,23 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/www/yapp/app/controllers/HomeController.php",
+					"file": "app/controllers/HomeController.php",
 					"settings":
 					{
-						"buffer_size": 182,
+						"buffer_size": 249,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								174,
-								174
+								187,
+								187
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1122,18 +1178,70 @@
 				},
 				{
 					"buffer": 2,
-					"file": "/www/yapp/app/views/hello.php",
+					"file": "app/controllers/RestaurantesController.php",
 					"settings":
 					{
-						"buffer_size": 7679,
+						"buffer_size": 627,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7678,
-								7678
+								397,
+								397
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/restaurantes.jade",
+					"settings":
+					{
+						"buffer_size": 476,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								164,
+								164
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/models/Restaurant.php",
+					"settings":
+					{
+						"buffer_size": 86,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								78,
+								78
 							]
 						],
 						"settings":
@@ -1148,78 +1256,25 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "/www/yapp/app/views/layout.blade.php",
-					"settings":
-					{
-						"buffer_size": 543,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								482,
-								482
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/media/asus/4C7AAA667AAA4D10/localhost/htdocs/hogare/app/views/layout/Web.blade.php",
-					"settings":
-					{
-						"buffer_size": 7610,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								355,
-								355
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
 					"buffer": 5,
-					"file": "/www/yapp/app/routes.php",
+					"file": "app/views/test.jade",
 					"settings":
 					{
-						"buffer_size": 499,
+						"buffer_size": 856,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								454,
-								454
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1229,25 +1284,26 @@
 				},
 				{
 					"buffer": 6,
-					"file": "/www/yapp/app/views/test.blade.php",
+					"file": "assets/js/app.coffee",
 					"settings":
 					{
-						"buffer_size": 1141,
+						"buffer_size": 79,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1099,
-								1099
+								32,
+								32
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 50.0,
+						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -1255,18 +1311,18 @@
 				},
 				{
 					"buffer": 7,
-					"file": "app.coffee",
+					"file": "assets/js/directives.coffee",
 					"settings":
 					{
-						"buffer_size": 2096,
+						"buffer_size": 192,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								381,
-								381
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1275,6 +1331,190 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "assets/js/controllers/horarios.coffee",
+					"settings":
+					{
+						"buffer_size": 750,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								28,
+								28
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "assets/js/controllers/restaurantes.coffee",
+					"settings":
+					{
+						"buffer_size": 303,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								301,
+								301
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/views/layout.jade",
+					"settings":
+					{
+						"buffer_size": 498,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								79,
+								79
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "app/views/errors/404.jade",
+					"settings":
+					{
+						"buffer_size": 46,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								46,
+								46
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "app/routes.php",
+					"settings":
+					{
+						"buffer_size": 674,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								601,
+								601
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "app/config/packages/bkwld/laravel-pug/config.php",
+					"settings":
+					{
+						"buffer_size": 155,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								33,
+								33
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "app/start/global.php",
+					"settings":
+					{
+						"buffer_size": 2700,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2542,
+								2542
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1360.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1319,7 +1559,7 @@
 	},
 	"output.exec":
 	{
-		"height": 146.0
+		"height": 128.0
 	},
 	"output.sftp":
 	{
@@ -1337,23 +1577,115 @@
 		[
 			[
 				"",
-				"assets/js/app.coffee"
+				"assets/js/controllers/restaurantes.coffee"
 			],
 			[
-				"jque",
-				"assets/js/libs/jquery.timepicker.js"
+				"global",
+				"app/start/global.php"
+			],
+			[
+				"layou",
+				"app/views/layout.jade"
 			],
 			[
 				"app.c",
 				"assets/js/app.coffee"
 			],
 			[
-				"tes",
-				"views/test.blade.php"
+				"la",
+				"app/views/layout.jade"
 			],
 			[
-				"la",
-				"views/layout.blade.php"
+				"res",
+				"app/views/restaurantes.jade"
+			],
+			[
+				"app.",
+				"assets/js/app.coffee"
+			],
+			[
+				"lay",
+				"app/views/layout.jade"
+			],
+			[
+				"package",
+				"app/config/packages/bkwld/laravel-pug/config.php"
+			],
+			[
+				"layoute",
+				"app/views/layout.jade"
+			],
+			[
+				"r",
+				"app/routes.php"
+			],
+			[
+				"horar",
+				"assets/js/controllers/horarios.coffee"
+			],
+			[
+				"routes",
+				"app/routes.php"
+			],
+			[
+				"rou",
+				"app/routes.php"
+			],
+			[
+				"app/st",
+				"app/start/global.php"
+			],
+			[
+				"app",
+				"assets/js/app.coffee"
+			],
+			[
+				"test",
+				"app/views/test.jade"
+			],
+			[
+				"hom",
+				"app/controllers/HomeController.php"
+			],
+			[
+				"app.php",
+				"app/config/app.php"
+			],
+			[
+				"app.js",
+				"assets/js/app.js"
+			],
+			[
+				"test.",
+				"app/views/test.jade"
+			],
+			[
+				"tes",
+				"app/views/test.blade.php"
+			],
+			[
+				"base",
+				"app/controllers/BaseController.php"
+			],
+			[
+				"ser",
+				"app/config/services.php"
+			],
+			[
+				"route",
+				"app/routes.php"
+			],
+			[
+				"home",
+				"app/controllers/HomeController.php"
+			],
+			[
+				"data",
+				"app/config/database.php"
+			],
+			[
+				"jque",
+				"assets/js/libs/jquery.timepicker.js"
 			],
 			[
 				"layo",
@@ -1362,14 +1694,6 @@
 			[
 				".bla",
 				"views/test.blade.php"
-			],
-			[
-				"home",
-				"controllers/HomeController.php"
-			],
-			[
-				"route",
-				"routes.php"
 			],
 			[
 				"views/",
@@ -1498,10 +1822,6 @@
 			[
 				"my_",
 				"app/core/MY_Controller.php"
-			],
-			[
-				"routes",
-				"app/config/routes.php"
 			],
 			[
 				"inici",
@@ -1766,86 +2086,6 @@
 			[
 				"em",
 				"public/css/mods/empresa.styl"
-			],
-			[
-				"empre.s",
-				"public/css/mods/empresa.styl"
-			],
-			[
-				"style.s",
-				"public/css/style.styl"
-			],
-			[
-				"empresa.jade",
-				"app/views/empresa.jade"
-			],
-			[
-				"yield",
-				"app/views/yields/footer.jade"
-			],
-			[
-				"asse",
-				"app/helpers/assets_helper.php"
-			],
-			[
-				"yiel",
-				"app/views/yields/head.jade"
-			],
-			[
-				"my",
-				"app/core/MY_Controller.php"
-			],
-			[
-				"res",
-				"public/css/responsive.styl"
-			],
-			[
-				"site.",
-				"app/views/site.jade"
-			],
-			[
-				"model.php",
-				"application/models/acuerdos_model.php"
-			],
-			[
-				"data",
-				"application/config/database.php"
-			],
-			[
-				"crud",
-				"application/controllers/admin/crud.php"
-			],
-			[
-				"scripts.",
-				"js/scripts.coffee"
-			],
-			[
-				"main.s",
-				"css/candidatos/main.styl"
-			],
-			[
-				"calendario/main",
-				"application/views/calendario/main.jade"
-			],
-			[
-				"models/",
-				"application/models/._index.html"
-			],
-			[
-				"calend",
-				"application/controllers/calendario.php"
-			],
-			[
-				"database",
-				"application/config/database.php"
-			],
-			[
-				"coord",
-				"application/models/coords_model.php"
-			],
-			[
-				"coor",
-				"application/models/coords_model.php"
 			]
 		],
 		"width": 0.0
@@ -1855,6 +2095,10 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"taller",
+				"/www/taller1/taller.sublime-project"
+			],
 			[
 				"tall",
 				"/mnt/www/taller1/taller.sublime-project"

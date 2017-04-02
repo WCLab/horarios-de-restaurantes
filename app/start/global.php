@@ -80,7 +80,12 @@ App::down(function()
 
 App::missing(function($exception)
 {
-    return Response::view('errors/404', array(), 404);
+    return Response::view('errors/404', array(
+    	"scope"=>array(
+    			"base"=>url(),
+    		)
+    	), 404
+    );
 });
 
 require app_path().'/filters.php';

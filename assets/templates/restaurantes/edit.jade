@@ -1,0 +1,16 @@
+div(ng-controller="RestaurantController")
+	div
+		a(href="#!/restaurantes") Volver al listado
+	form#restaurantEdit(ng-submit="save()")
+		div
+			div: label Nombre
+			input(type="text",ng-model="restaurante.nombre")
+		div
+			div: label Teléfono
+			input(ng-model="restaurante.telefono")
+		div
+			div: label Dirección
+			textarea(ng-model="restaurante.direccion")
+		div(ng-controller="horarioController")
+			//
+		button(type="submit") Guardar

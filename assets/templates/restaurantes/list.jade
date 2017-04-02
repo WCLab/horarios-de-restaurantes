@@ -1,0 +1,19 @@
+div(ng-controller="RestaurantesController")
+	h3 {{title}}
+	a(ng-href="#!/restaurantes/add") Agregar
+	table(width="100%")
+		thead
+			tr
+				th Nombre
+				th Dirección
+				th Horarios
+				th Acciones
+		tbody
+			tr(ng-repeat="restaurant in restaurantes")
+				td {{restaurant.nombre}}
+				td {{restaurant.direccion}}
+				td
+				td
+					ul
+						li: a(href="#!/restaurantes/edit/{{restaurant.id}}") Editar
+						li: a(ng-click="remove(restaurant.id)",href="javascript:void(0)") Eliminar

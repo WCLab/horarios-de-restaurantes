@@ -11,10 +11,13 @@
 |
 */
 
+// Route::get('/','HomeController@index');
+
+// Route::get('/test','HomeController@test');
+
 Route::get('/','HomeController@index');
 
-Route::get('/test','HomeController@test');
-
-Route::get('/restaurantes','RestaurantesController@index');
-
-Route::get('/restaurantes/delete/{id}','RestaurantesController@delete');
+Route::get('/restaurantes/all','RestaurantesController@all');
+Route::get('/restaurantes/{id}','RestaurantesController@view');
+Route::delete('/restaurantes/delete','RestaurantesController@delete');
+Route::put('/restaurantes/save','RestaurantesController@save');

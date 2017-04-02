@@ -1,13 +1,14 @@
 doctype
 html(ng-app="yapp")
 	head
-		title Yapp
-	body
-		block content
+		title Yapp Test
+	body(rel="#{scope.base}")
+		//- block content
+		div(ng-view)
 		script(src=asset('assets/js/libs/jquery.js'))
 		script(src=asset('assets/js/libs/jquery.timepicker.js'))
 		script(src=asset('assets/js/libs/angular.min.js'))
-		script(src=asset('assets/js/libs/timepickerdirective.min.js'))
+		script(src=asset('assets/js/services/angular-route.min.js'))
 		script(src=asset('assets/js/app.js'))
 		script(src=asset('assets/js/directives.js'))
 		block assets

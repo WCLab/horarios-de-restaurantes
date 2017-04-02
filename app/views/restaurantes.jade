@@ -2,24 +2,4 @@ extends layout
 
 block assets
 	script(src=asset('assets/js/controllers/restaurantes.js'))
-	
-block content
-	h3 Restaurantes
-
-	table(width="100%")
-		thead
-			tr
-				th Nombre
-				th Dirección
-				th Horarios
-				th Acciones
-		tbody
-			each restaurant in scope.restaurantes
-				tr
-					td= restaurant.nombre
-					td= restaurant.direccion
-					td
-					td
-						ul
-							li: a(href=url("restaurantes/edit/#{restaurant.id}")) Editar
-							li: a(href=url("restaurantes/delete/#{restaurant.id}")) Eliminar
+	script(src=asset('assets/js/controllers/horarios.js'))

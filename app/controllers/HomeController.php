@@ -2,13 +2,14 @@
 
 class HomeController extends BaseController {
 
-	public function index(){
-		$scope["restaurantes"] = Restaurant::all();
-		return View::make('restaurantes')->with('scope',$scope);
+	public function __construct(){
+		$this->data = array();
+		$this->data["base"] = url();
 	}
 
-	public function test(){
-		return View::make('test');
+	public function index(){
+		$this->data["restaurantes"] = Restaurant::all();
+		return View::make('restaurantes')->with('scope',$this->data);
 	}
 
 }
