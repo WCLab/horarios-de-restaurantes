@@ -3,7 +3,7 @@
 class RestaurantesController extends APIController{
 
 	public function __construct(){
-		// parent::__construct();
+		parent::__construct();
 	}
 
 	public function all(){

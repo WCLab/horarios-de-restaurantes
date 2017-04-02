@@ -1,0 +1,1 @@
+var dialog;$(document).ready(function(){return $("select").material_select()}),dialog={show:function(e,t,a){var i;return i="<b>"+e+"</b><div>"+t+"</div>",Materialize.toast(i,5e3)}};

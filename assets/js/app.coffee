@@ -1,6 +1,6 @@
 base = document.body.attributes.rel.value
 
-app = angular.module "yapp",['ngRoute']
+app = angular.module "yapp",['ngRoute','ui.materialize']
 
 app.config ['$routeProvider','$locationProvider',"$httpProvider", ($routeProvider,$locationProvider,$httpProvider) ->
 	

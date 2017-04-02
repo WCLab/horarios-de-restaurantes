@@ -4,12 +4,17 @@ html(ng-app="yapp")
 		title Yapp Test
 	body(rel="#{scope.base}")
 		//- block content
-		div(ng-view)
+		.container
+			div(ng-view)
 		script(src=asset('assets/js/libs/jquery.js'))
 		script(src=asset('assets/js/libs/jquery.timepicker.js'))
+		script(src=asset('assets/js/libs/materialize.min.js'))
 		script(src=asset('assets/js/libs/angular.min.js'))
 		script(src=asset('assets/js/services/angular-route.min.js'))
+		script(src=asset('assets/js/libs/angular-materialize.min.js'))
 		script(src=asset('assets/js/app.js'))
 		script(src=asset('assets/js/directives.js'))
+		script(src=asset('assets/js/scripts.js'))
 		block assets
 		link(rel="stylesheet" href=asset('assets/css/libs/jquery.timepicker.css'))
+		link(rel="stylesheet" href=asset('assets/css/style.css'))

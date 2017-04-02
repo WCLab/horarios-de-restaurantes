@@ -14,6 +14,7 @@ app.controller 'RestaurantesController', ["$scope","$http",($scope,$http)->
 			if !!response.data.status
 				$scope.restaurantes = $scope.restaurantes.filter (item) ->
 					return item.id != id
+			dialog.show 'Éxito',response.data.data,'error'
 ]
 
 app.controller 'RestaurantController', ["$scope","$http", "$routeParams","$window","$rootScope", ($scope,$http,$routeParams,$window,$rootScope) ->

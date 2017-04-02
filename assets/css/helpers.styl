@@ -1,0 +1,138 @@
+for x in 1...5
+	s= x*25
+	.h{s}p
+		height unit(s,"%")
+
+for x in 1..12
+	for y in 1..x
+		if y!=x
+			por= (y/x)*100
+			.ph{y}-{x}
+				height unit(por,'%')
+
+.ww
+	width 100%
+
+
+.dt
+	display table
+
+.dtc
+	display table-cell
+
+.vm
+	vertical-align middle
+
+.vb
+	vertical-align bottom
+
+.vt
+	vertical-align top
+
+.fx
+	position fixed
+
+.abs
+	position absolute
+
+.rel
+	position relative
+
+.r0
+	right 0
+
+.l0
+	left 0
+
+.t0
+	top 0
+
+.b0
+	bottom 0
+
+.ma
+	margin 0 auto
+
+for x in 0..10
+	v=x*5
+	.p{v}
+		padding unit(v,"px")
+	.pt{v}
+		padding-top unit(v,"px")
+	.pb{v}
+		padding-bottom unit(v,"px")
+	.pl{v}
+		padding-left unit(v,"px")
+	.pr{v}
+		padding-right unit(v,"px")
+	.ptpb{v}
+		padding unit(v,"px") 0
+	.plpr{v}
+		padding 0 unit(v,"px")
+	
+	.m{v}
+		margin unit(v,"px")
+	.mt{v}
+		margin-top unit(v,"px")
+	.mb{v}
+		margin-bottom unit(v,"px")
+	.ml{v}
+		margin-left unit(v,"px")
+	.mr{v}
+		margin-right unit(v,"px")
+	.mtmb{v}
+		margin unit(v,"px") 0
+	.mlmr{v}
+		margin 0 unit(v,"px")
+	
+		
+.responsive-image
+	max-width 100%
+	
+.hiding
+	opacity 0
+
+.showing
+	opacity 1
+	
+
+for x in 5..25
+	x = x*2
+	.fs{x}
+		font-size unit(x,"px")
+
+.tu
+	text-transform uppercase
+
+.tl
+	text-transform lowercase
+
+.tcap
+	text-transform capitalize
+	
+
+ul.no
+	margin 0
+	padding 0
+
+ul.dib
+	li
+		display inline-block
+		a
+			display block
+			
+.mask
+	top 0
+	left 0
+	right 0
+	bottom 0
+	width 100%
+	height 100%
+	position absolute
+			
+
+			
+
+@media only screen and (max-width: 480px)
+	.center-on-mobile-only
+		text-align center!important
