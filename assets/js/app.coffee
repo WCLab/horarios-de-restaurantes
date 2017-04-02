@@ -2,7 +2,9 @@ base = document.body.attributes.rel.value
 
 app = angular.module "yapp",['ngRoute']
 
-app.config ['$routeProvider','$locationProvider',($routeProvider,$locationProvider) ->
+app.config ['$routeProvider','$locationProvider',"$httpProvider", ($routeProvider,$locationProvider,$httpProvider) ->
+	
+	$httpProvider.defaults.headers.common["X-Requested-With"] = "XMLHttpRequest"	
 	
 	$routeProvider
 		
