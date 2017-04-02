@@ -1,6 +1,6 @@
 div(ng-controller="RestaurantController")
 	div
-		a(href="#!/restaurantes") Volver al listado
+		a(href="#!/restaurantes").btn #[span.fa.fa-chevron-left] Volver al listado
 	form#restaurantEdit(ng-submit="save()")
 		.row
 			.input-field
@@ -36,6 +36,6 @@ div(ng-controller="RestaurantController")
 										.input-field
 											.p5
 												a(href="javascript:void(0)" ng-click="removeHorario($parent.$index,$index)") Eliminar
-						button.btn.light-blue.darken-4(ng-click="addHorario($index)", type="button") Agregar horario
-		.pt20
-			button.btn.right-align(type="submit") Guardar
+						button.btn.light-blue.darken-4.mt20(ng-click="addHorario($index)", type="button") Agregar #[span.fa.fa-plus]
+		.mt20
+			button.btn(type="submit") Guardar #[span.fa.fa-hdd-o]

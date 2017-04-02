@@ -1,6 +1,6 @@
 div(ng-controller="RestaurantesController")
 	h3 {{title}}
-	a(ng-href="#!/restaurantes/add") Agregar
+	a.btn(ng-href="#!/restaurantes/add") Agregar #[span.fa.fa-plus]
 	table(width="100%").responsive-table.striped.highlight
 		thead
 			tr
@@ -15,5 +15,5 @@ div(ng-controller="RestaurantesController")
 				td {{restaurant.dias_txt}}
 				td
 					ul
-						li: a(href="#!/restaurantes/edit/{{restaurant.id}}") Editar
-						li: a(ng-click="remove(restaurant.id)",href="javascript:void(0)") Eliminar
+						li: a(href="#!/restaurantes/edit/{{restaurant.id}}") Editar #[span.fa.fa-pencil-square-o]
+						li: a(ng-click="remove(restaurant.id)",href="javascript:void(0)") Eliminar #[span.fa.fa-trash-o]
