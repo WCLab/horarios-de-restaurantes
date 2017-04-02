@@ -1,8 +1,8 @@
 app = angular.module 'yapp'
 
-app.controller "HorarioController", ["$scope",($scope) ->
+app.controller "HorarioController", ["$scope","$rootScope", ($scope,$rootScope) ->
 	
-	$scope.dias = [
+	$rootScope.dias = [
 		{id:1,nombre:"Domingo",checked: false,horarios:[]}
 		{id:2,nombre:"Lunes",checked: false,horarios:[]}
 		{id:3,nombre:"Martes",checked: false,horarios:[]}
@@ -12,17 +12,11 @@ app.controller "HorarioController", ["$scope",($scope) ->
 		{id:7,nombre:"Sábado",checked: false,horarios:[]}
 	]
 
-	$scope.timePickerOptions =
-		# step: 20
-		'show2400': false
-		'timeFormat': "H:i"
-		'appendTo': 'body'
-
 	$scope.add = (id) ->
-			$scope.dias[id].horarios.push({apertura:'',cierre:''})
+			$rootScope.dias[id].horarios.push({apertura:'',cierre:''})
 			
-	$scope.save = ->
-		console.log JSON.stringify $scope.dias
+	# $scope.save = ->
+	# 	console.log JSON.stringify $scope.dias
 
 
 ]

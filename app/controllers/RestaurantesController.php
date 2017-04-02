@@ -13,6 +13,7 @@ class RestaurantesController extends APIController{
 
 	public function view($id = false){
 		$restaurant = Restaurant::find($id);
+		$restaurant->horarios = $restaurant->horarios == NULL ? NULL : unserialize($restaurant->horarios);
 		return Response::json($restaurant);
 	}
 
@@ -51,7 +52,7 @@ class RestaurantesController extends APIController{
 		$restaurante->nombre = $put->nombre;
 		$restaurante->telefono = $put->telefono;
 		$restaurante->direccion = $put->direccion;
-		// $restaurante->horarios = $put->horarios;
+		$restaurante->horarios =  serialize($put->horarios);
 		
 		if($restaurante->save()){
 			$json["status"] = 1;

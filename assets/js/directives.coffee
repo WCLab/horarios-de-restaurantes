@@ -1,8 +1,8 @@
 app = angular.module 'yapp'
 
-app.directive 'ngTimepicker',["$scope",($scope)->
+app.directive 'ngTimepicker', ->
 	return def =
 		restrict: 'A'
-		link: (element,attrs,scope) ->
-			$(element).timepicker scope.timePickerOptions
-]
+		link: (scope,element,attrs) ->
+			$(element).timepicker
+				timeFormat:'H:i'

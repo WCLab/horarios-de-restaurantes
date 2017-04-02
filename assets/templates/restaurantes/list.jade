@@ -9,7 +9,7 @@ div(ng-controller="RestaurantesController")
 				th Horarios
 				th Acciones
 		tbody
-			tr(ng-repeat="restaurant in restaurantes")
+			tr(ng-repeat="restaurant in restaurantes | orderBy: id : true ")
 				td {{restaurant.nombre}}
 				td {{restaurant.direccion}}
 				td
