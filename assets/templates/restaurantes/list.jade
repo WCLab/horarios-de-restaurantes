@@ -12,7 +12,7 @@ div(ng-controller="RestaurantesController")
 			tr(ng-repeat="restaurant in restaurantes | orderBy: id : true ")
 				td {{restaurant.nombre}}
 				td {{restaurant.direccion}}
-				td
+				td {{restaurant.dias_txt}}
 				td
 					ul
 						li: a(href="#!/restaurantes/edit/{{restaurant.id}}") Editar

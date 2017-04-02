@@ -18,16 +18,16 @@ app.controller 'RestaurantesController', ["$scope","$http",($scope,$http)->
 
 app.controller 'RestaurantController', ["$scope","$http", "$routeParams","$window","$rootScope", ($scope,$http,$routeParams,$window,$rootScope) ->
 	$scope.restaurante = {}
+	$scope.restaurante.horarios = $scope.initHorarios
 
 	$edit = if $routeParams.id then true else false
 	
 	if $edit
-		$http.get base+"/restaurantes/"+$routeParams.id
-		.then (response) ->
+		$http.get(base+"/restaurantes/"+$routeParams.id).then (response) ->
 			$scope.restaurante = response.data
 			$horarios = $scope.restaurante.horarios
-			$scope.restaurante.horarios = if $horarios == null then $scope.initHorarios else $horarios
-	
+			$scope.restaurante.horarios = unless $horarios.length > 0 then $scope.initHorarios else $horarios
+
 	$scope.save = ->
 
 		$http.put(base+"/restaurantes/save",$scope.restaurante).then (response) ->
@@ -58,4 +58,7 @@ app.controller 'RestaurantController', ["$scope","$http", "$routeParams","$windo
 		{id:6,nombre:"Viernes",checked: false,horarios:[]}
 		{id:7,nombre:"Sábado",checked: false,horarios:[]}
 	]
+
+	$scope.updateHorario = ->
+		#
 ]

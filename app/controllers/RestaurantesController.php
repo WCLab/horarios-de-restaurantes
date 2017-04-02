@@ -8,12 +8,21 @@ class RestaurantesController extends APIController{
 
 	public function all(){
 		$restaurantes = Restaurant::all();
+		foreach ($restaurantes as $restaurant) {
+			$dias = array();
+			$restaurant->horarios = $restaurant->horarios == NULL ? array() : unserialize($restaurant->horarios);
+			foreach ($restaurant->horarios as $dia) {
+				if($dia["checked"])
+					$dias[] = $dia["nombre"];
+			}
+			$restaurant->dias_txt = implode(",", $dias);
+		}
 		return Response::json($restaurantes);
 	}
 
 	public function view($id = false){
 		$restaurant = Restaurant::find($id);
-		$restaurant->horarios = $restaurant->horarios == NULL ? NULL : unserialize($restaurant->horarios);
+		$restaurant->horarios = $restaurant->horarios == NULL ? array() : unserialize($restaurant->horarios);
 		return Response::json($restaurant);
 	}
 
