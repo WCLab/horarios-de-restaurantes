@@ -1,6 +1,6 @@
 base = document.body.attributes.rel.value
 
-app = angular.module "yapp",['ngRoute','ui.materialize']
+app = angular.module "yapp",['ngRoute','ui.materialize','ui.timepicker']
 
 app.config ['$routeProvider','$locationProvider',"$httpProvider", ($routeProvider,$locationProvider,$httpProvider) ->
 	
@@ -8,10 +8,6 @@ app.config ['$routeProvider','$locationProvider',"$httpProvider", ($routeProvide
 	
 	$routeProvider
 		
-		# .when "/",{
-		# 	controller: "MainCtrl"
-		# 	templateUrl: "templates/index.php"
-		# }
 		
 		.when "/restaurantes",{
 			controller: "RestaurantesController"
@@ -28,6 +24,11 @@ app.config ['$routeProvider','$locationProvider',"$httpProvider", ($routeProvide
 			templateUrl: base+"/assets/templates/restaurantes/edit.html"
 		}
 
+		.when "/restaurantes/:abiertos",{
+			controller: "RestaurantesController"
+			templateUrl: base+"/assets/templates/restaurantes/list.html"
+		}
+		
 		.otherwise "/restaurantes"
 
 	# $locationProvider.html5Mode

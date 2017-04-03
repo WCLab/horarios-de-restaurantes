@@ -1,11 +1,13 @@
 app = angular.module 'yapp'
 
-app.controller 'RestaurantesController', ["$scope","$http",($scope,$http)->
+app.controller 'RestaurantesController', ["$scope","$http","$routeParams",($scope,$http,$routeParams)->
 	
 	$scope.title = "Restaurantes"
 	$scope.restaurantes = new Array
 
-	$http.get(base+"/restaurantes/all").then (response)->
+	$suffix = if $routeParams.abiertos then "?open" else ""
+
+	$http.get(base+"/restaurantes/all"+$suffix).then (response)->
 		$scope.restaurantes = response.data
 
 	$scope.remove = (id) ->
@@ -31,6 +33,16 @@ app.controller 'RestaurantController', ["$scope","$http", "$routeParams","$windo
 
 	$scope.save = ->
 
+		$scope.restaurante.horarios.forEach (dia,i)->
+			unless dia.checked
+				dia.horarios = []
+			else
+				unless dia.horarios.length > 0
+					dia.checked = false
+
+			dia.horarios = dia.horarios.filter (item) ->
+				return (item.apertura != '' && item.cierre != '')
+
 		$http.put(base+"/restaurantes/save",$scope.restaurante).then (response) ->
 			
 			unless $edit
@@ -51,13 +63,13 @@ app.controller 'RestaurantController', ["$scope","$http", "$routeParams","$windo
 				return item != $scope.restaurante.horarios[dia].horarios[horario]
 
 	$scope.initHorarios = [
-		{id:1,nombre:"Domingo",checked: false,horarios:[]}
-		{id:2,nombre:"Lunes",checked: false,horarios:[]}
-		{id:3,nombre:"Martes",checked: false,horarios:[]}
-		{id:4,nombre:"Miercoles",checked: false,horarios:[]}
-		{id:5,nombre:"Jueves",checked: false,horarios:[]}
-		{id:6,nombre:"Viernes",checked: false,horarios:[]}
-		{id:7,nombre:"Sábado",checked: false,horarios:[]}
+		{id:1,nombre:"Lunes",checked: false,horarios:[]}
+		{id:2,nombre:"Martes",checked: false,horarios:[]}
+		{id:3,nombre:"Miercoles",checked: false,horarios:[]}
+		{id:4,nombre:"Jueves",checked: false,horarios:[]}
+		{id:5,nombre:"Viernes",checked: false,horarios:[]}
+		{id:6,nombre:"Sábado",checked: false,horarios:[]}
+		{id:7,nombre:"Domingo",checked: false,horarios:[]}
 	]
 
 	$scope.updateHorario = ->

@@ -16,6 +16,7 @@
 // Route::get('/test','HomeController@test');
 
 Route::get('/','HomeController@index');
+Route::get('/test','HomeController@test');
 
 Route::get('/restaurantes/all','RestaurantesController@all');
 Route::get('/restaurantes/{id}','RestaurantesController@view');

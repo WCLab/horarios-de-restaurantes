@@ -6,3 +6,6 @@ app.directive 'ngTimepicker', ->
 		link: (scope,element,attrs) ->
 			$(element).timepicker
 				timeFormat:'H:i'
+				show2400: false
+				# roundingFunction: false
+				disableTextInput:false

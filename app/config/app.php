@@ -39,6 +39,7 @@ return array(
 	|
 	*/
 
+	// 'timezone' => 'America/Mexico_City',
 	'timezone' => 'UTC',
 
 	/*

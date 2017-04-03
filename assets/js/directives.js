@@ -1,1 +1,1 @@
-var app;app=angular.module("yapp"),app.directive("ngTimepicker",function(){return{restrict:"A",link:function(i,r,e){return $(r).timepicker({timeFormat:"H:i"})}}});
+var app;app=angular.module("yapp"),app.directive("ngTimepicker",function(){return{restrict:"A",link:function(e,i,r){return $(i).timepicker({timeFormat:"H:i",show2400:!1,disableTextInput:!1})}}});
