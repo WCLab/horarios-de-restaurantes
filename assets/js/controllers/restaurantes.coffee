@@ -20,11 +20,6 @@ app.controller 'RestaurantesController', ["$scope","$http",($scope,$http)->
 					return item.id != id
 			dialog.show 'Éxito',response.data.data,'error'
 
-	# $scope.abiertos = ->
-	# 	$scope.filter.active = true;
-	# 	$scope.filter.list = $scope.restaurantes.filter (item) ->
-	# 		return item.abierto
-
 	$scope.searchBy = ->
 		if $scope.abiertos.active
 			return (restaurante) ->
