@@ -3,19 +3,50 @@
 class RestaurantesController extends APIController{
 
 	public function __construct(){
-		parent::__construct();
+		// parent::__construct();
+	}
+
+	public function deleted(){
+		$restaurantes = Restaurant::onlyTrashed()->get();
+		return Response::json($restaurantes);
 	}
 
 	public function all(){
+		$restaurantes = Restaurant::all();
 		foreach ($restaurantes as $restaurant) {
 			$dias = array();
 			$restaurant->horarios = $restaurant->horarios == NULL ? array() : unserialize($restaurant->horarios);
 			$abierto = false;
+			
 			foreach ($restaurant->horarios as $dia) {
 				if($dia["checked"])
 					$dias[] = $dia["nombre"];
 			}
+			
+
+			$dia = array_filter($restaurant->horarios,function($dia){
+				return $dia["checked"]==true && $dia["id"] == date("N");
+			});
+
+			if (count($dia)>0) {
+				$dia = current($dia);
+				$ahora = date("H:i");
+				$horarios = $dia["horarios"];
+				foreach ($horarios as $horario) {
+					if (timeDiff($ahora,$horario["apertura"])>0 && timeDiff($ahora,$horario["cierre"])>0){
+						$abierto = true;
+					}else{
+						$abierto = false;
+					}
+				}
+			}else{
+				//no abrió
+				$abierto = false;
+			}
+
 			$restaurant->dias_txt = implode(",", $dias);
+			$restaurant->abierto = $abierto;
+
 		}
 		return Response::json($restaurantes);
 	}

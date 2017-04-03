@@ -23,11 +23,6 @@ app.config ['$routeProvider','$locationProvider',"$httpProvider", ($routeProvide
 			controller: "RestaurantController"
 			templateUrl: base+"/assets/templates/restaurantes/edit.html"
 		}
-
-		.when "/restaurantes/:abiertos",{
-			controller: "RestaurantesController"
-			templateUrl: base+"/assets/templates/restaurantes/list.html"
-		}
 		
 		.otherwise "/restaurantes"
 

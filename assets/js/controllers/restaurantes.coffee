@@ -1,13 +1,15 @@
 app = angular.module 'yapp'
 
-app.controller 'RestaurantesController', ["$scope","$http","$routeParams",($scope,$http,$routeParams)->
+app.controller 'RestaurantesController', ["$scope","$http",($scope,$http)->
 	
 	$scope.title = "Restaurantes"
-	$scope.restaurantes = new Array
+	$scope.restaurantes = []
+	$scope.abiertos = {
+		active:false,
+		list:[]
+	}
 
-	$suffix = if $routeParams.abiertos then "?open" else ""
-
-	$http.get(base+"/restaurantes/all"+$suffix).then (response)->
+	$http.get(base+"/restaurantes/all").then (response)->
 		$scope.restaurantes = response.data
 
 	$scope.remove = (id) ->
@@ -17,6 +19,17 @@ app.controller 'RestaurantesController', ["$scope","$http","$routeParams",($scop
 				$scope.restaurantes = $scope.restaurantes.filter (item) ->
 					return item.id != id
 			dialog.show 'Éxito',response.data.data,'error'
+
+	# $scope.abiertos = ->
+	# 	$scope.filter.active = true;
+	# 	$scope.filter.list = $scope.restaurantes.filter (item) ->
+	# 		return item.abierto
+
+	$scope.searchBy = ->
+		if $scope.abiertos.active
+			return (restaurante) ->
+				return restaurante.abierto
+			
 ]
 
 app.controller 'RestaurantController', ["$scope","$http", "$routeParams","$window","$rootScope", ($scope,$http,$routeParams,$window,$rootScope) ->

@@ -4,8 +4,17 @@ html(ng-app="yapp")
 		title Yapp Test
 	body(rel="#{scope.base}")
 		//- block content
+		.navbar-fixed
+			nav
+				.nav-wrapper.container
+					a(href=scope.base).brand-logo Lorem
+					ul.right.hide-on-med-and-down
+						li: a(href="#!/restaurantes") Inicio
+						li: a(href="#!/restaurantes/add") Agregar
+
+
 		.container
-			div(ng-view)
+			.pt20.pb20(ng-view)
 		script(src=asset('assets/js/libs/jquery.js'))
 		script(src=asset('assets/js/libs/jquery.timepicker.min.js'))
 		script(src=asset('assets/js/libs/materialize.min.js'))

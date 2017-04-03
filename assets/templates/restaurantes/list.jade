@@ -1,19 +1,30 @@
 div(ng-controller="RestaurantesController")
 	h3 {{title}}
-	a.btn(ng-href="#!/restaurantes/add") Agregar #[span.fa.fa-plus]
-	table(width="100%").responsive-table.striped.highlight
-		thead
-			tr
-				th Nombre
-				th Dirección
-				th Horarios
-				th Acciones
-		tbody
-			tr(ng-repeat="restaurant in restaurantes | orderBy: id : true ")
-				td {{restaurant.nombre}}
-				td {{restaurant.direccion}}
-				td {{restaurant.dias_txt}}
-				td
-					ul
-						li: a(href="#!/restaurantes/edit/{{restaurant.id}}") Editar #[span.fa.fa-pencil-square-o]
-						li: a(ng-click="remove(restaurant.id)",href="javascript:void(0)") Eliminar #[span.fa.fa-trash-o]
+	#listado
+		.panel
+			.row
+				a.btn(ng-href="#!/restaurantes/add") Agregar #[span.fa.fa-plus]
+			.row
+				label Filtrar abiertos
+				.switch
+					label 
+						| No
+						input(type="checkbox",ng-model="abiertos.active",ng-checked="abiertos.active")
+						span.lever
+						| Sí
+		table(width="100%").responsive-table.striped.highlight
+			thead
+				tr
+					th Nombre
+					th Dirección
+					th Horarios
+					th Acciones
+			tbody
+				tr(ng-repeat="restaurant in restaurantes | orderBy: id : true | filter: searchBy() ")
+					td {{restaurant.nombre}}
+					td {{restaurant.direccion}}
+					td {{restaurant.dias_txt}}
+					td
+						ul
+							li: a(href="#!/restaurantes/edit/{{restaurant.id}}") Editar #[span.fa.fa-pencil-square-o]
+							li: a(ng-click="remove(restaurant.id)",href="javascript:void(0)") Eliminar #[span.fa.fa-trash-o]
